@@ -58,10 +58,13 @@
   <section id="overview">
     <h2>Project Overview</h2>
     <p>
-      The project focuses on analyzing student learning outcomes at both the course and program levels. 
-      I developed the ACAT (Assessment Calculation and Aggregation Tool) to automate outcome calculations based on student assessment data, 
-      integrating results into comprehensive reports for both individual courses and programs. Additionally, I integrated a learner model agent 
-      for generating personalized feedback for students, improving the assessment process.
+        The project focuses on analyzing student learning outcomes at the course level. 
+        I developed the ACAT (Assessment Calculation and Aggregation Tool) to automate outcome calculations based on student assessment data. 
+        This tool generates comprehensive reports per student using Likert scale conversion (1–5), aligned with course outcomes. 
+        Student grade data was converted into Likert scores to support this process, allowing more consistent interpretation across assessments.
+        These Likert-scaled outcomes were then passed to a GPT-based learner model agent that provides individualized feedback for students. 
+        Since GPT models are more effective at interpreting qualitative and natural language data, this conversion enabled more meaningful feedback generation.
+        The result is a system that improves transparency and effectiveness in course-level outcome assessments.
     </p>
   </section>
 
@@ -102,7 +105,7 @@
     <p><strong>Additional Key Files:</strong></p>
     <ul>
       <li><code>chat_with_gpt.py</code>: Automates interactions with the learner model to provide detailed feedback on student outcomes.</li>
-      <li><code>student_outcomes</code>: Contains the mapped outcomes for each student.</li>
+      <li><code>student_outcomes.py</code>: Contains the mapped outcomes for each student.</li>
       <li><code>assessment_databases</code>: Houses the data tables used for assessment aggregation.</li>
       <li><code>assessment_results</code>: Stores the results of assessments across various courses.</li>
       <li><code>assignments</code>: Contains assignment-specific information used in the outcome calculations.</li>
@@ -138,7 +141,7 @@
     <ul>
       <li><a href="https://github.com/srsonti/srsonti-Assessment/blob/main/src/ACAT/acat.py" target="_blank">acat.py</a></li>
       <li><a href="https://github.com/srsonti/srsonti-Assessment/blob/main/src/ACAT/chat_with_gpt.py" target="_blank">chat_with_gpt.py</a></li>
-      <li><a href="https://github.com/srsonti/srsonti-Assessment/blob/main/src/ACAT/student_outcomes.py" target="_blank">student_outcomes</a></li>
+      <li><a href="https://github.com/srsonti/srsonti-Assessment/blob/main/src/ACAT/student_outcomes.py" target="_blank">student_outcomes.py</a></li>
       <li><a href="https://github.com/srsonti/srsonti-Assessment/tree/main/src/ACAT/assessment_databases" target="_blank">assessment_databases</a></li>
       <li><a href="https://github.com/srsonti/srsonti-Assessment/tree/main/src/ACAT/assessment_results" target="_blank">assessment_results</a></li>
       <li><a href="https://github.com/srsonti/srsonti-Assessment/tree/main/src/ACAT/assignments" target="_blank">assignments</a></li>
