@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Course and Program Assessment | Portfolio</title>
   <style>
     body {
@@ -55,15 +56,16 @@
 
   <header>
     <h1>Course and Program Assessment</h1>
-    <p><strong>Contributor:</strong> SRSonti</p>
+    <p><strong>GitHub ID:</strong> <a href="https://github.com/srsonti" target="_blank">srsonti</a></p>
   </header>
 
   <section id="overview">
     <h2>Project Overview</h2>
     <p>
-      This project focuses on analyzing student learning outcomes at both the course and program levels. 
-      My contributions included developing the ACAT outcome calculation system, integrating student assessment data, 
-      and automating the generation of outcome-based performance reports.
+      The project focuses on analyzing student learning outcomes at both the course and program levels. 
+      I developed the ACAT (Assessment Calculation and Aggregation Tool) to automate outcome calculations based on student assessment data, 
+      integrating results into comprehensive reports for both individual courses and programs. Additionally, I integrated a learner model agent 
+      for generating personalized feedback for students, improving the assessment process.
     </p>
   </section>
 
@@ -76,19 +78,19 @@
       </tr>
       <tr>
         <td>Sprint 1</td>
-        <td>Set up project structure and configuration files</td>
+        <td>Set up project structure and configuration files, including integration with assessment data.</td>
       </tr>
       <tr>
         <td>Sprint 2</td>
-        <td>Implement ACAT class for outcome calculation</td>
+        <td>Develop the ACAT Python class for outcome calculation, handling various student performance metrics.</td>
       </tr>
       <tr>
         <td>Sprint 3</td>
-        <td>Build learner model agent for outcome feedback</td>
+        <td>Build a learner model agent to provide automated feedback for students based on course outcomes.</td>
       </tr>
       <tr>
         <td>Sprint 4</td>
-        <td>Finalize working MVP across multiple courses</td>
+        <td>Finalize MVP by refining outcome calculation logic, adding more courses, and testing with live data.</td>
       </tr>
     </table>
   </section>
@@ -96,15 +98,26 @@
   <section id="tasks">
     <h2>Summary of Tasks</h2>
     <ul>
-      <li>Developed the ACAT outcome calculation class in Python</li>
-      <li>Designed Likert score conversion and report generation</li>
-      <li>Integrated multiple course datasets for outcome aggregation</li>
-      <li>(Team task) UI development for tutor dashboard (not my contribution)</li>
+      <li>Designed and implemented the ACAT class in Python to automate outcome calculations for individual courses and entire programs.</li>
+      <li>Implemented Likert score conversion for better interpretation of student performance.</li>
+      <li>Developed a learner model agent to generate personalized feedback based on student performance across multiple courses.</li>
+      <li>Integrated datasets such as student grades and course outcomes to provide aggregated performance reports for institutional assessments.</li>
+    </ul>
+    <p><strong>Additional Key Files:</strong></p>
+    <ul>
+      <li><code>chat_with_gpt.py</code>: Automates interactions with the learner model to provide detailed feedback on student outcomes.</li>
+      <li><code>student_outcomes</code>: Contains the mapped outcomes for each student.</li>
+      <li><code>assessment_databases</code>: Houses the data tables used for assessment aggregation.</li>
+      <li><code>assessment_results</code>: Stores the results of assessments across various courses.</li>
+      <li><code>assignments</code>: Contains assignment-specific information used in the outcome calculations.</li>
+      <li><code>course_outcomes</code>: Contains predefined outcomes for each course to align with program objectives.</li>
+      <li><code>grades</code>: Stores student grades across multiple courses.</li>
+      <li><code>run_acat.py</code>: Script that runs the ACAT calculations across all integrated data sources.</li>
     </ul>
   </section>
 
   <section id="screenshots">
-    <h2>Screenshots</h2>
+    <h2>Project Output</h2>
     <div class="screenshot-gallery">
       <div>
         <img src="images/acat_output1.png" alt="ACAT Output 1">
@@ -125,17 +138,6 @@
     <h2>Code Repository</h2>
     <p>Public repository: <a href="https://github.com/srsonti/srsonti-Assessment" target="_blank">github.com/srsonti/srsonti-Assessment</a></p>
     <ul>
-      <li><a href="https://github.com/srsonti/srsonti-Assessment/blob/main/acat/ACAT.py">ACAT.py (Outcome Calculation)</a></li>
-      <li><a href="https://github.com/srsonti/srsonti-Assessment/tree/main/config">Config files</a></li>
-    </ul>
-  </section>
-
-  <section id="appendix">
-    <h2>Appendix</h2>
-    <ul>
-      <li><a href="https://github.com/srsonti/srsonti-Assessment/commits/main">Full commit history</a></li>
-    </ul>
-  </section>
-
-</body>
-</html>
+      <li><a href="https://github.com/srsonti/srsonti-Assessment/blob/main/acat/ACAT.py" target="_blank">ACAT.py (Outcome Calculation)</a></li>
+      <li><a href="https://github.com/srsonti/srsonti-Assessment/blob/main/chat_with_gpt.py" target="_blank">chat_with_gpt.py (Feedback Generation)</a></li>
+      <li><a href="https://github.com/srsonti/srsonti-Assessment/blob/main/student_outcomes" target="_blank">student_o_
